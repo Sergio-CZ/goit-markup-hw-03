@@ -1,0 +1,299 @@
+/* Цвет основы и цветoвая гамма страницы */
+:root {
+  --text-color:  #757575;
+  --title-color: #212121;
+  --color-blue: #2196F3;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-red: #990909;
+  --color-footer: #2F303A;
+  --color-whitesemi: rgba(255, 255, 255, 0.6);
+  --color-button-grey: #F5F4FA;
+  --color-button-blue: #188CE8;
+}
+
+/* Основные шрифт, цвет шрифта и др. */
+
+body {
+  background-color:#FFFFFF;
+  color: var(--title-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+/* Полезное правило для удаления атрибутов в списке */
+
+.list {
+  padding: 0;
+  margin: 0;
+list-style: none;
+}
+
+.page-header {
+  background-color: grey;
+}
+
+.container {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width:1440px;
+  outline: 2px solid tomato;
+}
+
+/* Первая страница Студия */
+
+.studio-logo {
+  color: var(--color-black);
+  font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.11; 
+    text-decoration-line: none;
+    letter-spacing: 0.02em;
+}
+
+.web-logo {
+  color: var(--color-blue);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+.site-pages {
+  color: var(--title-color);
+}
+
+.site-pages .light {
+  color: var(--color-blue);
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  text-decoration-line: none;
+  letter-spacing: 0.02em;
+}
+ 
+.site-pages .light:active {
+  color: var(--color-blue);
+
+}
+ .studio-web {
+  color: var(--title-color);
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  text-decoration-line: none;
+  letter-spacing: 0.02em;
+}
+
+.studio-web:hover,
+.studio-web:focus {
+  color: var(--color-blue);
+}
+
+.contact {
+  color: var(--text-color);
+}
+.contact-link {
+  color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration-line: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--color-blue);
+}
+
+.text {
+  padding: 14px 46px;
+  margin-top: 200px;  
+  background-color: var(--color-footer);
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;  
+  outline: 2px solid greenyellow;
+}
+
+.button {
+  border-radius: 4px;
+  padding: 6px 32px;
+  min-width: 200px;
+  height: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 200px;  
+  
+  background-color: var(--color-blue);  
+  color: var(--color-white);    
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--color-button-blue);
+}
+
+.rules-list {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.rules-text {
+  margin-top: 0;
+  margin-bottom: 94px;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.section-list {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.photo {
+  margin-top: 0;
+  margin-bottom: 188px;
+}
+.portrets {
+  margin-top: 0;
+  margin-bottom: 569px;
+
+}
+
+.name-list {
+  color: var(--title-color);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.profi-text {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.section-address {
+  text-align: center;
+  background-color: var(--color-footer);
+}
+
+.address-studio {
+  color: var(--color-white);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.11;
+  text-decoration-line: none;
+  font-style: normal;
+}
+
+.address-text {
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration-line: none;
+  font-style: normal;
+}
+
+.address-text:hover,
+.address-text:focus {
+  color: var(--color-blue);
+}
+
+.address-info {
+  color: var(--color-whitesemi);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration-line: none;
+  font-style: normal;
+}
+
+.address-info:hover,
+.address-info:focus {
+  color: var(--color-blue);
+}
+
+ /*  Вторая страница Portfolio */
+
+.works {
+  color: var(--title-color);
+  font-family: Roboto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-transform: none;   
+}
+
+.all-button {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.all-button:hover,
+.all-button:focus {
+  background-color: var(--color-button-blue);
+}
+
+.web-button {
+  background-color: var(--color-button-grey);
+  color: var(--title-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
+
+.web-button:hover,
+.web-button:focus {
+  background-color: var(--color-button-blue);
+  color: var(--color-white);
+}
+
+.site-text {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+
+
