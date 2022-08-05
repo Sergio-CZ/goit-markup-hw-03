@@ -12,7 +12,7 @@
   --color-button-blue: #188CE8;
 }
 
-/* Основные шрифт, цвет шрифта и др. */
+/* О с н овные шрифт, цвет шр ифта и др. */
 
 body {
   background-color:#FFFFFF;
@@ -22,7 +22,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* П о л е з н о е правило для удаления атрибутов в списке */
+/* Полезное правило для удаления атрибутов в списке */
 
 .list {
   padding: 0;
@@ -38,9 +38,21 @@ list-style: none;
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
-  width:1440px;
+  width: 1200px;
+  margin-bottom: 255;
   outline: 2px solid tomato;
+  background-color: rgb(127, 227, 227);
 }
+
+.item {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 270px;
+  outline: 2px solid tomato;
+  background-color: rgb(154, 233, 233);
+}
+
 
 /* Первая страница Студия */
 
@@ -114,7 +126,8 @@ list-style: none;
 
 .text {
   padding: 14px 46px;
-  margin-top: 200px;  
+  margin-top: 0px;
+  margin-bottom: 50px;  
   background-color: var(--color-footer);
   color: var(--color-white);
   font-weight: 900;
@@ -132,7 +145,6 @@ list-style: none;
   min-width: 200px;
   height: 50px;
   text-align: center;
-  margin-top: 50px;
   margin-bottom: 200px;  
   
   background-color: var(--color-blue);  
@@ -188,6 +200,17 @@ list-style: none;
   margin-bottom: 569px;
 
 }
+
+.icon {
+  padding: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 270px;
+  text-align: center;
+  outline: 2px solid tomato;
+  background-color: rgb(204, 227, 164);
+}
+   
 
 .name-list {
   color: var(--title-color);
