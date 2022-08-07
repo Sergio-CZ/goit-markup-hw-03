@@ -39,6 +39,11 @@ list-style: none;
 
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .page-header {
   background-color: rgb(255, 255, 255);
   width: 1600px;
@@ -57,6 +62,8 @@ list-style: none;
 
 .studio-logo {
   margin-left: 15px;
+  margin-top: 24px;
+  margin-bottom: 25px;
   color: var(--color-black);
   font-family: Raleway;
     font-weight: 700;
@@ -129,16 +136,15 @@ list-style: none;
 
 .contact {
   display: flex;
-  margin-right: auto;
+  margin-left: 331px;
   color: var(--text-color);
 }
 
-.contact .item+.item {
-  margin-left: 50px;
+.contact .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact .item {
-  margin-left: 331px;
   background-color: tomato;
 }
 
@@ -160,18 +166,19 @@ list-style: none;
 .contact-link:focus {
   color: var(--color-blue);
 }
+
 /* Main solution */
 .section-address {
   width: 1600px;
-  height: 600px;
   text-align: center;
+  background-color: rgb(180, 141, 141);
 }
+
  .text {
-padding-top:0;
-margin-top: 200px;
+padding-top:200px;
+margin-top:0;
 margin-bottom: 0;
 
-background-color: var(--color-footer);
   color: var(--color-white);
   font-weight: 900;
   font-size: 44px;
@@ -184,16 +191,13 @@ background-color: var(--color-footer);
 
 .button {
   display: inline-block;  
-
-  margin-top: 30px;
-  margin-bottom: 200px;
-  border-radius: 4px;
   padding: 10px 32px;
+  margin-top: 30px; 
+  border-radius: 4px;  
   min-width: 200px;
   height: 50px;
   text-align: center;
-   
-  
+     
   background-color: var(--color-blue);  
   color: var(--color-white);    
   font-family: Roboto;
@@ -204,14 +208,32 @@ background-color: var(--color-footer);
   cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
-  background-color: var(--color-button-blue);
+.features {
+    width:1600px;
+    background-color: rgb(210, 115, 115);
+    margin-top: 94px;
+    padding-top: 0;    
+    padding-bottom: 0;
+   
+
+}
+
+.respons {
+  display: flex;
+ justify-content: center; 
+  
+ padding-top: 0;
+
+padding-bottom: 0;
+}
+.respons .item.item:not(:last-child) {
+  margin-right:30px;
 }
 
 .rules-list {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin-top: 94px;
+  text-align: center;
+
   color: var(--title-color);
   font-weight: 700;
   font-size: 14px;
@@ -219,18 +241,28 @@ background-color: var(--color-footer);
   text-transform: uppercase;
 }
 
+.button:hover,
+.button:focus {
+  background-color: var(--color-button-blue);
+}
+
 .rules-text {
-  margin-top: 0;
-  margin-bottom: 94px;
+  margin-top: 10;
   color: var(--text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
 
+.image {
+  width: 1600px;
+  justify-content: center;
+  background-color: rgb(181, 157, 157);
+}
+
 .section-list {
-  margin-top: 0;
-  margin-bottom: 50px;
+  margin-top: 94px;
+  margin-bottom: 0px;
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
@@ -239,52 +271,97 @@ background-color: var(--color-footer);
 }
 
 .photo {
-  margin-top: 0;
-  margin-bottom: 188px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
-.portrets {
+
+.photo .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.portraits {
   margin-top: 0;
   margin-bottom: 569px;
+}
 
+.profil {
+  display: flex;
+  margin-top: 50px;
+}
+
+.profil .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .icon {
-  margin-left: auto;
-  margin-right: auto;
   min-width: 270px;
   text-align: center;
   outline: 2px solid tomato;
   background-color: rgb(204, 227, 164);
 }
 .section-list .icon {
-  margin-left: auto;
+   margin-left: auto;
     margin-right: auto;
     min-width: 270px;
     text-align: center;
     outline: 2px solid tomato;
     background-color: rgb(22, 152, 31);
-
-
 }
 
+.ideal {
+  min-width: 270px;
+
+  outline: 2px solid tomato;
+  background-color: rgb(204, 227, 164);
+}
+
+.portrait {
+  width: 1600px;
+  background-color: rgb(211, 181, 181);
+}
 .name-list {
-  margin-top: 0;
-  margin-bottom: 10;
+  margin-top: 30px;
   color: var(--title-color);
   font-size: 16px;
   line-height: 1.17;
 }
 
 .profi-text {
-  margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 10px;
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
 }
 
+.footer-address {
+  background-color: rgb(192, 148, 148);
+  width:1600px;
+}
 
+.footer {
+  display: block;
+  padding-top: 60px;
+}
+
+.space {
+  display: block;
+  padding-top: 20px;
+}
+
+.lospace {
+  display: block;
+}
+
+.lospace .icon {
+  margin-left: 0;
+  align-content: left;
+}
+
+.lospace .ideal:not(:last-child) {
+margin-bottom:9px;
+}
 
 .address-studio {
   color: var(--color-white);
