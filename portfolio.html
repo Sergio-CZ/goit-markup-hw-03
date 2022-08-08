@@ -13,32 +13,38 @@
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body >
-    <header>
-        <!--Шапка страницы-->
-        <a class="studio-logo" href="index.html" title="Наш Логотип"><span class="web-logo">Web</span>Studio</a>
-        <nav>
+    <header class="section page-header">
+        <div class="container main-nav">
+            <a class="studio-logo" href="index.html" title="Наш Логотип"><span class="web-logo">Web</span>Studio</a>
             <ul class="site-pages list">
-                <li><a class="studio-web" href="./index.html" title="Наша Студия">Студия</a></li>
-                <li><a class="light" href="./portfolio.html" title="Наши проекты"  >Портфолио</a></li>
-                <li><a class="studio-web" href="./index.html" title="Наши контакты">Контакты</a></li>
+                <li class="item">
+                    <a class="light" href="./index.html" title="Наша Студия">Студия</a>
+                </li>
+                <li class="item">
+                    <a class="studio-web" href="./portfolio.html" title="Наши проекты">Портфолио</a>
+                </li>
+                <li class="item">
+                    <a class="studio-web" href="./index.html" title="Наши контакты">Контакты</a>
+                </li>
             </ul>
-        </nav>
-        <div>
             <ul class="contact list">
-                <li><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="item"><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="item"><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </div>
+        <div class="box"></div>
     </header>
  <main>
-    <section>
+    <section class="stories">
+
         <h1 class="works">Главная секция</h1> 
-            <ul class="list">
-                <li><button type="button" class="all-button">Все</button></li>
-                <li><button type="button" class="web-button">Веб-сайты</button></li>
-                <li><button type="button" class="web-button">Приложения</button></li> 
-                <li><button type="button" class="web-button">Дизайн</button></li> 
-                <li><button type="button" class="web-button">Маркетинг</button></li> 
+
+            <ul class="buttons list">
+                <li class="item"><button type="button" class="all-button">Все</button></li>
+                <li class="item"><button type="button" class="web-button">Веб-сайты</button></li>
+                <li class="item"><button type="button" class="web-button">Приложения</button></li> 
+                <li class="item"><button type="button" class="web-button">Дизайн</button></li> 
+                <li class="item"><button type="button" class="web-button">Маркетинг</button></li> 
             </ul>
             <ul class="list">
                 <li><img src="./images/img5.jpg" alt="Сайт ТЕХНОКРЯК" width="370" />
@@ -73,15 +79,26 @@
     </main>
 <footer>
     <!--Заключительная часть HW 2-->
-<address class="section-address">
-    <a class="address-studio" href="./index.html" title="Наш Логотип"><span class="web-logo">Web</span>Studio</a>
-    <ul class="list">
-        <li><a class="address-text" href="https://google.maps/" rel="noopener noreferrer">г. Киев, пр-т
-                Леси Украинки, 26</a></li>
-        <li><a class="address-info" href="mailto:info@example.com">info@example.com</a></li>
-        <li><a class="address-info" href="tel:+380991111111">+38 099 111 11 11</a></li>
-    </ul>
-</address>
-</footer>    
+    <address class="section footer-address">
+        <div class="container footer">
+            <a class="address-studio icon" href="./index.html" title="Наш Логотип"><span
+                    class="web-logo">Web</span>Studio</a>
+        </div>
+        <div class="container space">
+            <ul class="list">
+                <li class="left">
+                    <a class="address-text" href="https://google.maps/" rel="noopener noreferrer">г. Киев, пр-т
+                        Леси Украинки, 26</a>
+                </li>
+                <li class="left">
+                    <a class="address-info" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="left">
+                    <a class="address-info" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </address>
+</footer>
 </body>
 </html>

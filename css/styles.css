@@ -12,7 +12,7 @@
   --color-button-blue: #188CE8;
 }
 
-/* О с н овные шрифт, цвет шр ифта и др. */
+/* Основные шрифт, цвет шр ифта и др. */
 
 body {
   background-color:#FFFFFF;
@@ -36,26 +36,17 @@ list-style: none;
   display: flex;
   align-items: center;
   margin:auto;
-
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .page-header {
   background-color: rgb(255, 255, 255);
   width: 1600px;
-  height:80px;
 }
  
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid tomato;
-  background-color: rgb(255, 255, 255);
 }
 
 /* Первая страница Студия */
@@ -64,7 +55,9 @@ list-style: none;
   margin-left: 15px;
   margin-top: 24px;
   margin-bottom: 25px;
+
   color: var(--color-black);
+  
   font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -85,10 +78,6 @@ list-style: none;
 .site-pages {
   display: flex;
   margin-left: 93px;
-}
-
-.site-pages .item {
-  background-color: tomato; 
 }
 
 .site-pages .item:not(:last-child) {
@@ -144,17 +133,12 @@ list-style: none;
   margin-right: 50px;
 }
 
-.contact .item {
-  background-color: tomato;
-}
-
 .contact .contact-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   
-  
-   color: var(--text-color);
+  color: var(--text-color);
 
     font-size: 14px;
     line-height: 1.17;
@@ -167,11 +151,17 @@ list-style: none;
   color: var(--color-blue);
 }
 
+/* Рамка 1 px */
+
+.box {
+  border-bottom: 1px solid #ECECEC;
+}
+
 /* Main solution */
 .section-address {
   width: 1600px;
   text-align: center;
-  background-color: rgb(180, 141, 141);
+  background-color: var(--color-footer);;
 }
 
  .text {
@@ -180,22 +170,23 @@ margin-top:0;
 margin-bottom: 0;
 
   color: var(--color-white);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.06em;  
-  outline: 2px solid greenyellow;
 }
 
 .button {
-  display: inline-block;  
+  display: inline-block; 
+  min-width: 200px;
   padding: 10px 32px;
   margin-top: 30px; 
-  border-radius: 4px;  
-  min-width: 200px;
-  height: 50px;
+  margin-bottom: 200px;
+  border-radius: 4px;    
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   text-align: center;
      
   background-color: var(--color-blue);  
@@ -208,42 +199,35 @@ margin-bottom: 0;
   cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+  background-color: var(--color-button-blue);
+}
+
 .features {
     width:1600px;
-    background-color: rgb(210, 115, 115);
-    margin-top: 94px;
     padding-top: 0;    
-    padding-bottom: 0;
-   
-
+    padding-bottom: 0;  
 }
 
 .respons {
-  display: flex;
- justify-content: center; 
-  
- padding-top: 0;
-
+display: flex;
+justify-content: center;   
+padding-top: 0;
 padding-bottom: 0;
+margin-top: 94px;
 }
-.respons .item.item:not(:last-child) {
+
+.respons .item:not(:last-child) {
   margin-right:30px;
 }
 
-.rules-list {
-  margin-top: 94px;
-  text-align: center;
-
+.rules-list {  
   color: var(--title-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
   text-transform: uppercase;
-}
-
-.button:hover,
-.button:focus {
-  background-color: var(--color-button-blue);
 }
 
 .rules-text {
@@ -256,13 +240,11 @@ padding-bottom: 0;
 
 .image {
   width: 1600px;
+  margin-top: 94px;
   justify-content: center;
-  background-color: rgb(181, 157, 157);
 }
 
 .section-list {
-  margin-top: 94px;
-  margin-bottom: 0px;
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
@@ -280,9 +262,14 @@ padding-bottom: 0;
   margin-right: 30px;
 }
 
-.portraits {
+.portrait {
   margin-top: 0;
-  margin-bottom: 569px;
+  margin-bottom: 94px;
+}
+
+.profil .icon {
+  min-width: 270px;
+  text-align: center;
 }
 
 .profil {
@@ -297,28 +284,11 @@ padding-bottom: 0;
 .icon {
   min-width: 270px;
   text-align: center;
-  outline: 2px solid tomato;
-  background-color: rgb(204, 227, 164);
-}
-.section-list .icon {
-   margin-left: auto;
-    margin-right: auto;
-    min-width: 270px;
-    text-align: center;
-    outline: 2px solid tomato;
-    background-color: rgb(22, 152, 31);
 }
 
-.ideal {
-  min-width: 270px;
-
-  outline: 2px solid tomato;
-  background-color: rgb(204, 227, 164);
-}
 
 .portrait {
   width: 1600px;
-  background-color: rgb(211, 181, 181);
 }
 .name-list {
   margin-top: 30px;
@@ -336,8 +306,8 @@ padding-bottom: 0;
 }
 
 .footer-address {
-  background-color: rgb(192, 148, 148);
   width:1600px;
+  background-color: var(--color-footer);
 }
 
 .footer {
@@ -348,18 +318,10 @@ padding-bottom: 0;
 .space {
   display: block;
   padding-top: 20px;
+  padding-bottom: 60px;
 }
 
-.lospace {
-  display: block;
-}
-
-.lospace .icon {
-  margin-left: 0;
-  align-content: left;
-}
-
-.lospace .ideal:not(:last-child) {
+.space .left:not(:last-child) {
 margin-bottom:9px;
 }
 
@@ -401,7 +363,39 @@ margin-bottom:9px;
   color: var(--color-blue);
 }
 
+
+
+
+
  /*  Вторая страница Portfolio */
+
+
+
+
+
+.stories {
+  background-color: rgb(171, 211, 241);
+  width: 1600px;
+}
+
+.works {
+  display:none;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  
+  background-color: rgb(240, 207, 207);
+  outline: 2px solid rgb(128, 113, 0);
+}
+
+.buttons .item:not(:last-child) { 
+  margin-right: 8px;
+}
+
 
 .works {
   color: var(--title-color);
