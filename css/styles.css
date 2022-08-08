@@ -153,7 +153,7 @@ list-style: none;
 
 /* Рамка 1 px */
 
-.box {
+.box1 {
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -245,6 +245,8 @@ margin-top: 94px;
 }
 
 .section-list {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
@@ -256,6 +258,7 @@ margin-top: 94px;
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 0;
 }
 
 .photo .item:not(:last-child) {
@@ -263,7 +266,7 @@ margin-top: 94px;
 }
 
 .portrait {
-  margin-top: 0;
+  margin-top: 188px;
   margin-bottom: 94px;
 }
 
@@ -313,6 +316,7 @@ margin-top: 94px;
 .footer {
   display: block;
   padding-top: 60px;
+  margin-top: 0;
 }
 
 .space {
@@ -374,30 +378,34 @@ margin-bottom:9px;
 
 
 .stories {
-  background-color: rgb(171, 211, 241);
   width: 1600px;
+  margin-top: 94px;
 }
 
-.works {
+.box2 {
+  box-sizing: border-box;
+  border: 1px solid #EEEEEE;
+  }
+
+.inspite {
   display:none;
 }
 
 .buttons {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: auto;
-  
-  background-color: rgb(240, 207, 207);
-  outline: 2px solid rgb(128, 113, 0);
+  align-items:flex-start;
+
 }
 
 .buttons .item:not(:last-child) { 
   margin-right: 8px;
 }
 
-
 .works {
+  margin-top: 20px;
+  margin-left: 24px;
+  
   color: var(--title-color);
   font-family: Roboto;
     font-weight: 700;
@@ -408,6 +416,8 @@ margin-bottom:9px;
 }
 
 .all-button {
+  padding: 6px 22px;
+
   background-color: var(--color-blue);
   color: var(--color-white);
   font-family: Roboto;
@@ -424,6 +434,8 @@ margin-bottom:9px;
 }
 
 .web-button {
+  padding: 6px 22px;
+
   background-color: var(--color-button-grey);
   color: var(--title-color);
   font-family: Roboto;
@@ -439,7 +451,21 @@ margin-bottom:9px;
   color: var(--color-white);
 }
 
+.sites {
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+margin-top: 34px;
+margin-bottom: 94px;
+gap:30px;
+}
+
+.sites .item:not(:last-child) {
+  gap: 30px;
+}
+
 .site-text {
+  margin:4px 24px 20px;
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.88;
