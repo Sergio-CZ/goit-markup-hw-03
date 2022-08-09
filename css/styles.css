@@ -207,7 +207,7 @@ margin-bottom: 0;
 .features {
     width:1600px;
     padding-top: 0;    
-    padding-bottom: 0;  
+    padding-bottom: 94px;  
 }
 
 .respons {
@@ -240,13 +240,12 @@ margin-top: 94px;
 
 .image {
   width: 1600px;
-  margin-top: 94px;
   justify-content: center;
 }
 
 .section-list {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
@@ -277,7 +276,7 @@ margin-top: 94px;
 
 .profil {
   display: flex;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .profil .item:not(:last-child) {
@@ -384,7 +383,9 @@ margin-bottom:9px;
 
 .box2 {
   box-sizing: border-box;
-  border: 1px solid #EEEEEE;
+  border-left: 1px solid #7d2a2a;
+  border-bottom: 1px solid #7d2a2a;
+  border-right:1px solid #7d2a2a;
   }
 
 .inspite {
@@ -403,10 +404,11 @@ margin-bottom:9px;
 }
 
 .works {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-left: 24px;
   
   color: var(--title-color);
+
   font-family: Roboto;
     font-weight: 700;
     font-size: 18px;
