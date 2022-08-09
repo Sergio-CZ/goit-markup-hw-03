@@ -30,23 +30,33 @@ body {
 list-style: none;
 }
 
+/* Корисна вставка:  */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
 /* main-nav */
+
+.page-header {
+  background-color: rgb(255, 255, 255);
+  width: 1600px;
+}
 
 .main-nav {
   display: flex;
   align-items: center;
   margin:auto;
 }
-
-.page-header {
-  background-color: rgb(255, 255, 255);
-  width: 1600px;
-}
  
-.container {
+.container {  
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
 }
 
 /* Первая страница Студия */
@@ -380,46 +390,30 @@ margin-bottom:9px;
 
 .stories {
   width: 1600px;
-  margin-top: 94px;
 }
 
-.box2 {
-  box-sizing: border-box;
-  border-left: 1px solid #7d2a2a;
-  border-bottom: 1px solid #7d2a2a;
-  border-right:1px solid #7d2a2a;
-  border-top: 0;
-  } 
-
 .inspite {
-  display:none;
+  display: none;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
-  align-items:flex-start;
-
+  align-items: flex-start;
 }
 
-.buttons .item:not(:last-child) { 
+.buttons .item:not(:last-child) {
   margin-right: 8px;
 }
 
-.works {
-  padding-top: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 24px;
-  
-  color: var(--title-color);
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 
-  font-family: Roboto;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    text-transform: none;   
+.buttons .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .all-button {
@@ -458,25 +452,65 @@ margin-bottom:9px;
   color: var(--color-white);
 }
 
-.sites {
-display: flex;
-flex-wrap: wrap;
-align-content: center;
-margin-top: 34px;
-margin-bottom: 94px;
-gap:30px;
+.flex-container {
+ display:flex;
+ flex-wrap:wrap;
+ margin-top: 34px;
+ margin-bottom:94px;
 }
 
-.sites .item:not(:last-child) {
-  gap: 30px;
+.elements {
+  width:370px;
+  margin-right:30px;
+}
+
+.elements:nth-child(3n){
+  margin:0;
+}
+
+.border {
+  border-left: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+}
+
+.works {
+  padding-top: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 24px;
+
+  color: var(--title-color);
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-transform: none;
 }
 
 .site-text {
-  margin:4px 24px 20px;
-    color: var(--text-color);
-    font-size: 16px;
-    line-height: 1.88;
+  margin-top: 4px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.88;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
