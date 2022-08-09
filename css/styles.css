@@ -294,6 +294,7 @@ margin-top: 94px;
 }
 .name-list {
   margin-top: 30px;
+  margin-bottom:0;
   color: var(--title-color);
   font-size: 16px;
   line-height: 1.17;
@@ -301,6 +302,7 @@ margin-top: 94px;
 
 .profi-text {
   margin-top: 10px;
+  margin-bottom: 30px;
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
@@ -386,15 +388,8 @@ margin-bottom:9px;
   border-left: 1px solid #7d2a2a;
   border-bottom: 1px solid #7d2a2a;
   border-right:1px solid #7d2a2a;
-  }
-
-.border {
-  border-left: 1px solid #7d2a2a;
-    border-bottom: 1px solid #7d2a2a;
-    border-right: 1px solid #7d2a2a;
-    border-top: 0;
-  }
-
+  border-top: 0;
+  } 
 
 .inspite {
   display:none;
