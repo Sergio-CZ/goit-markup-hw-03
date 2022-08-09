@@ -37,7 +37,6 @@ img {
   max-width: 100%;
 }
 
-
 /* main-nav */
 
 .page-header {
@@ -174,7 +173,7 @@ img {
   background-color: var(--color-footer);;
 }
 
- .text {
+.text {
 padding-top:200px;
 margin-top:0;
 margin-bottom: 0;
@@ -298,10 +297,10 @@ margin-top: 94px;
   text-align: center;
 }
 
-
 .portrait {
   width: 1600px;
 }
+
 .name-list {
   margin-top: 30px;
   margin-bottom:0;
