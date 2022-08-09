@@ -388,6 +388,14 @@ margin-bottom:9px;
   border-right:1px solid #7d2a2a;
   }
 
+.border {
+  border-left: 1px solid #7d2a2a;
+    border-bottom: 1px solid #7d2a2a;
+    border-right: 1px solid #7d2a2a;
+    border-top: 0;
+  }
+
+
 .inspite {
   display:none;
 }
@@ -404,7 +412,9 @@ margin-bottom:9px;
 }
 
 .works {
+  padding-top: 20px;
   margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: 24px;
   
   color: var(--title-color);
