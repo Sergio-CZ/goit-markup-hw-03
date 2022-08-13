@@ -161,9 +161,6 @@ border-bottom: 1px solid #ECECEC;
   color: var(--color-blue);
 }
 
-/* Рамка 1 px */
- 
-
 /* Main solution */
 
 .blur {
@@ -396,7 +393,9 @@ margin-bottom:9px;
 
 
 
-
+.portfolio {
+  margin: 0 auto 94px;
+}
 
 .stories {
   width: 1600px;
@@ -410,19 +409,10 @@ margin-bottom:9px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 20px;
 }
 
-.buttons .item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.buttons .item:not(:last-child) {
+.buttons .button-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -462,10 +452,10 @@ margin-bottom:9px;
   color: var(--color-white);
 }
 
-.flex-container {
+.wrap-container {
  display:flex;
  flex-wrap:wrap;
- margin-top: 34px;
+ margin-top: 30px;
  margin-bottom:94px;
 }
 
@@ -487,7 +477,7 @@ margin-bottom:9px;
 .works {
   padding-top: 20px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 4px;
   margin-left: 24px;
 
   color: var(--title-color);
@@ -501,7 +491,7 @@ margin-bottom:9px;
 }
 
 .site-text {
-  margin-top: 4px;
+  margin-top: 0px;
   margin-left: 24px;
   margin-bottom: 20px;
   color: var(--text-color);
