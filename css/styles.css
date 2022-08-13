@@ -1,4 +1,20 @@
 /* Цвет основы и цветoвая гамма страницы */
+
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --text-color:  #757575;
   --title-color: #212121;
@@ -24,11 +40,10 @@ body {
 
 /* Полезное правило для удаления атрибутов в списке */
 
+/* 
 .list {
-  padding: 0;
-  margin: 0;
 list-style: none;
-}
+} */
 
 /* Корисна вставка:  */
 
@@ -38,17 +53,27 @@ img {
 }
 
 /* main-nav */
+.section {
+    margin: 0 auto 0px;
+    justify-content: center;
+    width: 1600px;
+  
+}
+
+.header {
+padding:25px 0;
+border-bottom: 1px solid #ECECEC;
+}
+/* 
  .section {
   width: 1600px;
   margin: 0 auto;
- }
+ } */
 
-
-
-.container { 
+.container, .container-footer { 
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   width: 1200px;
   padding: 0 15px;
   margin:0 auto;
@@ -57,8 +82,7 @@ img {
 /* Первая страница Студия */
 
 .studio-logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  margin-right: 93px;
 
   color: var(--color-black);
   
@@ -66,7 +90,6 @@ img {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.17; 
-    text-decoration-line: none;
     letter-spacing: 0.03em;
 }
 
@@ -79,20 +102,15 @@ img {
     letter-spacing: 0.03em;
 }
 
-.site-pages {
+.pages {  
   display: flex;
-  margin-left: 93px;
-  margin-right: auto;
+  width: 294px;
+  justify-content: space-between;
+  margin-right: 331px;
 }
-
-.site-pages .item:not(:last-child) {
-  margin-right: 50px;
-  }
   
-.site-pages .light {
+.pages .light {
   display: block; 
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--color-blue);
 
@@ -100,18 +118,15 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
-  text-decoration-line: none;
   letter-spacing: 0.02em;
 }
  
-.site-pages .light:active {
+.pages .light:active {
   color: var(--color-blue);
 
 }
- .site-pages .studio-web {
+ .pages .studio-web {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--title-color);
 
@@ -119,7 +134,6 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
-  text-decoration-line: none;
   letter-spacing: 0.02em;
 }
 
@@ -130,26 +144,17 @@ img {
 
 .contact {
   display: flex;
-  margin-left: 331px;
-  margin-right: auto;
+  justify-content: space-between;
+  width: 307px;
 }
 
-.contact .contact-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--text-color);
-
+.contact-link {
+    color: var(--text-color);
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    text-decoration-line: none;
   }
-    
-  .contact .mail:not(:last-child) {
-    margin-right: 50px;
-  }
+
 
 .contact-link:hover,
 .contact-link:focus {
@@ -157,10 +162,7 @@ img {
 }
 
 /* Рамка 1 px */
-
-.box1 {
-  border-bottom: 1px solid #ECECEC;
-}
+ 
 
 /* Main solution */
 
@@ -168,28 +170,35 @@ img {
   height:600px;
   text-align: center;
   background-color: var(--color-footer);
-  margin: 0 auto;
+  margin: 0 auto 94px;
+  justify-content: center;
+}
+
+.effekt {
+  display: block;
+  margin: 0 auto 0;
 }
 
 .text {
 padding-top:200px;
-margin:0 auto;
+margin: 0 auto 30px;
+width: 696px;
+text-align: center;
+justify-content: center;
 
   color: var(--color-white);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.06em;  
 }
 
-.button {
+.main-button {
   display: inline-block; 
   min-width: 200px;
   padding: 10px 32px;
-  margin-top: 30px; 
   border-radius: 4px;    
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
      
@@ -201,23 +210,33 @@ margin:0 auto;
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border:none;
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--color-button-blue);
 }
+  
+.rules {
+    margin: 0 auto 94px;
+}
+
 
 .respons {
-display: flex;
-justify-content: center;   
-padding: 0 auto 0;
-margin-top: 94px;
+ display: flex;
+ width: 1200px;
+ justify-content: space-between;
 }
 
+.respons-item {
+  width: 270px;
+}
+
+/* 
 .respons .item:not(:last-child) {
   margin-right:30px;
-}
+} */
 
 .rules-list {  
   color: var(--title-color);
@@ -234,13 +253,16 @@ margin-top: 94px;
   font-size: 14px;
   line-height: 1.71;
 }
+.deal {
+margin: 0 auto 188px;
+}
 
 .team {
-  margin: 188px auto 94px;
+  margin: 0 auto 94px;
 }
 
 .practice {
-  margin: 94px auto 50px;  
+  margin: 0 auto 50px;  
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
@@ -248,16 +270,24 @@ margin-top: 94px;
   text-align: center;
 }
 
-.photo {
+.task{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 1200px;
   margin: 0 auto 0;
 }
 
-.photo .item:not(:last-child) {
-  margin-right: 30px;
+.photo-item {
+  background-color: var(--color-button-grey);
+  Bottom right radius: 4px;
+  bottom-shadow: ;
+  border-radius: 4px;
 }
 
+
+.profil .photo-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .profil {
   display: flex;
@@ -269,7 +299,7 @@ margin-top: 94px;
 }
 
 
-.profil .item:not(:last-child) {
+.profil .photo-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -284,6 +314,7 @@ margin-top: 94px;
 
 .name-list {
   margin-top: 30px;
+  margin-bottom: 10px;
   margin-bottom:0;
   color: var(--title-color);
   font-size: 16px;
@@ -291,7 +322,6 @@ margin-top: 94px;
 }
 
 .profi-text {
-  margin-top: 10px;
   margin-bottom: 30px;
   color: var(--text-color);
   font-weight: 400;
@@ -299,46 +329,43 @@ margin-top: 94px;
   line-height: 1.17;
 }
 
-.footer-address {
-  width:1600px;
-  background-color: var(--color-footer);
-  margin-left: auto;
- margin-right: auto;
-}
 
 .footer {
-  display: block;
-  padding-top: 60px;
-  margin-left: 215px;
+  padding: 60px 0;
+  background-color: var(--color-footer);
+
 }
 
-.space {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 60px;
-  margin-left: 215px;
+.container-footer {
+  display:block;
+
 }
 
-.space .left:not(:last-child) {
+.footer-address {
+  margin-top: 20px;
+}
+
+.footer-address .left:not(:last-child) {
 margin-bottom:9px;
+
 }
 
 .address-studio {
+  margin-bottom: 20px;
   color: var(--color-white);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.11;
-  text-decoration-line: none;
   font-style: normal;
 }
 
 .address-text {
+
   color: var(--color-white);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  text-decoration-line: none;
   font-style: normal;
 }
 
