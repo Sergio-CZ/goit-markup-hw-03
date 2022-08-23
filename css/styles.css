@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before *::after {
   box-sizing: inherit;
@@ -66,6 +67,7 @@ img {
   display: block;
   max-width: 100%;
 }
+
 .container {
   display: flex;
   align-items: center;
@@ -75,20 +77,30 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 /* main-nav */
 
-.section {
-  padding: 94px 0 94px;
-  margin: 0 auto 0;
-  text-align: center;
-  width: 1600px;
-}
-.header {
-  padding: 25px 0;
-  border-bottom: 1px solid #ececec;
+.container-list {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-/* Первая страница Студия */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.line-border {
+  padding: 32px 0;
+  border-bottom: 1px solid #ececec;
+  margin: 0 auto;
+}
+
+/* Перша сторінка Студія */
 
 .header-logo {
   margin-right: 93px;
@@ -153,14 +165,12 @@ img {
 .cheader-contact-link:focus {
   color: var(--color-blue);
 }
-/* Main solution */
 .hero {
+  margin: 0 auto;
   height: 600px;
   text-align: center;
   background-color: var(--color-footer);
-  padding: 94px 0 94px;
-  margin: 0 auto 0;
-  width: 1600px;
+  /* width: 1600px; */
 }
 .hero-container {
   display: block;
@@ -200,14 +210,14 @@ img {
 }
 
 .hero-ii {
-  padding: 94px 0 0;
+  padding: 94px 0 94px;
   margin: 0 auto 0;
   text-align: center;
   width: 1600px;
 }
-.hero-ii-text {
+/* .hero-ii-text {
   display: none;
-}
+} */
 .hero-ii-item {
   display: block;
   padding-bottom: 0;
@@ -216,7 +226,7 @@ img {
 .hero-ii-item:not(:last-child) {
   margin-right: 30px;
 }
-
+/* 
 .hero-ii-item::before {
   display: block;
   content: '';
@@ -228,7 +238,7 @@ img {
   background-position: center;
   background-color: var(--color-button-grey);
   margin-bottom: 30px;
-}
+} */
 
 .hero-ii-title {
   text-align: left;
@@ -248,19 +258,20 @@ img {
 }
 
 .hero-iii {
-  padding: 94px 0 0;
+  padding-top: 0;
+  padding-bottom: 94px;
   margin: 0 auto 0;
   text-align: center;
   width: 1600px;
 }
 .hero-iii-item {
-  padding: 0 0 94px;
+  /* padding: 0 0 94px; */
   margin: 0 auto 0;
   text-align: center;
   width: 1600px;
 }
 .hero-iii-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
@@ -322,10 +333,8 @@ img {
   line-height: 1.17;
 }
 footer {
-  padding-bottom: 60px;
-  width: 1600px;
   margin: 0 auto 0;
-  text-align: center;
+  text-align: left;
   background-color: var(--color-footer);
 }
 .footer-address .footer-list:not(:last-child) {
@@ -334,10 +343,8 @@ footer {
 .footer-text {
   display: block;
   text-align: left;
-  padding-left: 215px;
   padding-top: 60px;
   margin-bottom: 20px;
-  text-align: left;
   color: var(--color-white);
   font-family: Raleway;
   font-weight: 700;
@@ -347,13 +354,15 @@ footer {
 }
 .footer-container {
   display: block;
-  padding: 0;
-  margin: 0;
+  padding-bottom: 60px;
 }
 
-.footer-list {
+.footer-item {
   display: block;
-  padding-left: 215px;
+}
+
+.footer-container .footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-map {
@@ -365,12 +374,15 @@ footer {
   line-height: 1.71;
   font-style: normal;
 }
-.footer-map:not(:last-child) {
-  margin-top: 9px;
-}
+
 .footer-map:hover,
 .footer-map:focus {
   color: var(--color-blue);
+}
+.main-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
 }
 .footer-link {
   display: block;
@@ -386,14 +398,10 @@ footer {
 .footer-link:focus {
   color: var(--color-blue);
 }
-
-/*  Вторая страница Portfolio */
-
 .hero-port-section {
   padding: 94px 0 0;
   margin: 0 auto 0;
   text-align: center;
-  width: 1600px;
 }
 
 .hero-port-list {
@@ -446,8 +454,11 @@ footer {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  border: none;
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border: none;
 }
 .hero-port-btn:hover,
 .hero-port-btn:focus {
@@ -455,7 +466,7 @@ footer {
   color: var(--color-white);
 }
 .hero-ii-port {
-  padding: 0 0 94px;
+  /* padding: 0 0 94px; */
   margin: 0 auto 0;
   text-align: center;
   width: 1600px;
